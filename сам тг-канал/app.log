@@ -1,0 +1,675 @@
+2024-12-16 21:08:57,795 - INFO - Start polling
+2024-12-16 21:09:01,040 - INFO - Run polling for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:13:00,618 - WARNING - Received SIGINT signal
+2024-12-16 21:13:00,619 - INFO - Polling stopped for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:13:00,619 - INFO - Polling stopped
+2024-12-16 21:13:03,864 - INFO - Start polling
+2024-12-16 21:13:04,047 - INFO - Run polling for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:13:20,697 - INFO - Мария Румянцева: 262186581 запустил бота
+2024-12-16 21:13:20,903 - INFO - Update id=208363974 is handled. Duration 206 ms by bot id=7147966252
+2024-12-16 21:15:09,391 - INFO - Мария Румянцева: 262186581 отправил текст: Мария Румянцева
+2024-12-16 21:15:09,393 - INFO - Update id=208363975 is not handled. Duration 2 ms by bot id=7147966252
+2024-12-16 21:15:09,393 - ERROR - Cause exception while process update id=208363975 by bot id=7147966252
+KeyError: 'М'
+Traceback (most recent call last):
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/translittgbot.py", line 72, in tranliterate
+    eng_name += trans_dict[char].upper()
+                ~~~~~~~~~~^^^^^^
+KeyError: 'М'
+2024-12-16 21:17:12,760 - WARNING - Received SIGINT signal
+2024-12-16 21:17:12,761 - INFO - Polling stopped for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:17:12,761 - INFO - Polling stopped
+2024-12-16 21:17:16,083 - INFO - Start polling
+2024-12-16 21:17:16,251 - INFO - Run polling for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:17:19,209 - INFO - Мария Румянцева: 262186581 отправил текст: Мария Румянцева
+2024-12-16 21:17:19,210 - INFO - Update id=208363976 is not handled. Duration 0 ms by bot id=7147966252
+2024-12-16 21:17:19,210 - ERROR - Cause exception while process update id=208363976 by bot id=7147966252
+KeyError: 'М'
+Traceback (most recent call last):
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/translittgbot.py", line 77, in tranliterate
+    await message.answer(text=trans_com(text))
+                              ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/translittgbot.py", line 66, in trans_com
+    eng_name += trans_dict[char].upper()
+                ~~~~~~~~~~^^^^^^
+KeyError: 'М'
+2024-12-16 21:17:28,421 - INFO - Мария Румянцева: 262186581 запустил бота
+2024-12-16 21:17:28,670 - INFO - Update id=208363977 is handled. Duration 249 ms by bot id=7147966252
+2024-12-16 21:18:06,121 - INFO - Мария Румянцева: 262186581 отправил текст: ghdt
+2024-12-16 21:18:06,310 - INFO - Update id=208363978 is handled. Duration 188 ms by bot id=7147966252
+2024-12-16 21:18:09,272 - INFO - Мария Румянцева: 262186581 отправил текст: привет
+2024-12-16 21:18:09,360 - INFO - Update id=208363979 is handled. Duration 88 ms by bot id=7147966252
+2024-12-16 21:18:13,766 - INFO - Мария Румянцева: 262186581 отправил текст: Мария румняецва
+2024-12-16 21:18:13,772 - INFO - Update id=208363980 is not handled. Duration 6 ms by bot id=7147966252
+2024-12-16 21:18:13,772 - ERROR - Cause exception while process update id=208363980 by bot id=7147966252
+KeyError: 'М'
+Traceback (most recent call last):
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/translittgbot.py", line 77, in tranliterate
+    await message.answer(text=trans_com(text))
+                              ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/translittgbot.py", line 66, in trans_com
+    eng_name += trans_dict[char].upper()
+                ~~~~~~~~~~^^^^^^
+KeyError: 'М'
+2024-12-16 21:18:18,657 - INFO - Мария Румянцева: 262186581 отправил текст: Мария
+2024-12-16 21:18:18,657 - INFO - Update id=208363981 is not handled. Duration 0 ms by bot id=7147966252
+2024-12-16 21:18:18,657 - ERROR - Cause exception while process update id=208363981 by bot id=7147966252
+KeyError: 'М'
+Traceback (most recent call last):
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/translittgbot.py", line 77, in tranliterate
+    await message.answer(text=trans_com(text))
+                              ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/translittgbot.py", line 66, in trans_com
+    eng_name += trans_dict[char].upper()
+                ~~~~~~~~~~^^^^^^
+KeyError: 'М'
+2024-12-16 21:18:23,839 - INFO - Мария Румянцева: 262186581 отправил текст: мария
+2024-12-16 21:18:23,943 - INFO - Update id=208363982 is handled. Duration 104 ms by bot id=7147966252
+2024-12-16 21:18:29,034 - INFO - Мария Румянцева: 262186581 отправил текст: МАРЯИ
+2024-12-16 21:18:29,035 - INFO - Update id=208363983 is not handled. Duration 0 ms by bot id=7147966252
+2024-12-16 21:18:29,035 - ERROR - Cause exception while process update id=208363983 by bot id=7147966252
+KeyError: 'М'
+Traceback (most recent call last):
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/translittgbot.py", line 77, in tranliterate
+    await message.answer(text=trans_com(text))
+                              ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/translittgbot.py", line 66, in trans_com
+    eng_name += trans_dict[char].upper()
+                ~~~~~~~~~~^^^^^^
+KeyError: 'М'
+2024-12-16 21:19:04,663 - WARNING - Received SIGINT signal
+2024-12-16 21:19:04,664 - INFO - Polling stopped for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:19:04,665 - INFO - Polling stopped
+2024-12-16 21:19:08,065 - INFO - Start polling
+2024-12-16 21:19:08,240 - INFO - Run polling for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:19:09,050 - INFO - Мария Румянцева: 262186581 отправил текст: Маряи
+2024-12-16 21:19:09,250 - INFO - Update id=208363984 is handled. Duration 200 ms by bot id=7147966252
+2024-12-16 21:19:11,690 - INFO - Мария Румянцева: 262186581 отправил текст: мария
+2024-12-16 21:19:11,804 - INFO - Update id=208363985 is handled. Duration 114 ms by bot id=7147966252
+2024-12-16 21:19:13,775 - INFO - Мария Румянцева: 262186581 отправил текст: Мария
+2024-12-16 21:19:13,880 - INFO - Update id=208363986 is handled. Duration 104 ms by bot id=7147966252
+2024-12-16 21:19:15,601 - INFO - Мария Румянцева: 262186581 отправил текст: МАРИЯ
+2024-12-16 21:19:15,680 - INFO - Update id=208363987 is handled. Duration 78 ms by bot id=7147966252
+2024-12-16 21:19:21,324 - INFO - Мария Румянцева: 262186581 отправил текст: Румянцева
+2024-12-16 21:19:21,438 - INFO - Update id=208363988 is handled. Duration 114 ms by bot id=7147966252
+2024-12-16 21:19:30,727 - INFO - Мария Румянцева: 262186581 отправил текст: Мария Сергеевна Румянцева
+2024-12-16 21:19:30,916 - INFO - Update id=208363989 is handled. Duration 189 ms by bot id=7147966252
+2024-12-16 21:19:47,327 - WARNING - Received SIGINT signal
+2024-12-16 21:19:47,328 - INFO - Polling stopped for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:19:47,328 - INFO - Polling stopped
+2024-12-16 21:19:50,642 - INFO - Start polling
+2024-12-16 21:19:50,808 - INFO - Run polling for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:19:55,978 - INFO - Мария Румянцева: 262186581 отправил текст: Мария Сергеевна Румянцева
+2024-12-16 21:19:56,200 - INFO - Update id=208363990 is handled. Duration 222 ms by bot id=7147966252
+2024-12-16 21:20:05,125 - INFO - Мария Румянцева: 262186581 отправил текст: Евгений Вадимович
+2024-12-16 21:20:06,303 - INFO - Update id=208363991 is handled. Duration 1178 ms by bot id=7147966252
+2024-12-16 21:20:12,872 - INFO - Мария Румянцева: 262186581 отправил текст: анастасия кротова
+2024-12-16 21:20:12,949 - INFO - Update id=208363992 is handled. Duration 77 ms by bot id=7147966252
+2024-12-16 21:20:18,917 - INFO - Мария Румянцева: 262186581 отправил текст: илья прусьянцев
+2024-12-16 21:20:18,996 - INFO - Update id=208363993 is handled. Duration 79 ms by bot id=7147966252
+2024-12-16 21:21:25,769 - WARNING - Received SIGINT signal
+2024-12-16 21:21:25,770 - INFO - Polling stopped for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:21:25,770 - INFO - Polling stopped
+2024-12-16 21:21:28,974 - INFO - Start polling
+2024-12-16 21:21:29,141 - INFO - Run polling for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:21:39,214 - INFO - Мария Румянцева: 262186581 запустил бота
+2024-12-16 21:21:39,419 - INFO - Update id=208363994 is handled. Duration 205 ms by bot id=7147966252
+2024-12-16 21:22:17,648 - WARNING - Received SIGINT signal
+2024-12-16 21:22:17,649 - INFO - Polling stopped for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:22:17,649 - INFO - Polling stopped
+2024-12-16 21:22:21,334 - INFO - Start polling
+2024-12-16 21:22:21,498 - INFO - Run polling for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:22:31,915 - INFO - Мария Румянцева: 262186581 запустил бота
+2024-12-16 21:22:32,094 - INFO - Update id=208363995 is not handled. Duration 179 ms by bot id=7147966252
+2024-12-16 21:22:32,094 - ERROR - Cause exception while process update id=208363995 by bot id=7147966252
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 294
+Traceback (most recent call last):
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/translittgbot.py", line 22, in proccess_command_start
+    await bot.send_message(chat_id=user_id, text=text, parse_mode='Markdown')
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 2962, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 494, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 294
+2024-12-16 21:22:46,970 - WARNING - Received SIGINT signal
+2024-12-16 21:22:46,972 - INFO - Polling stopped for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:22:46,972 - INFO - Polling stopped
+2024-12-16 21:22:50,234 - INFO - Start polling
+2024-12-16 21:22:50,400 - INFO - Run polling for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:22:50,478 - INFO - Мария Румянцева: 262186581 запустил бота
+2024-12-16 21:22:50,660 - INFO - Update id=208363996 is not handled. Duration 182 ms by bot id=7147966252
+2024-12-16 21:22:50,660 - ERROR - Cause exception while process update id=208363996 by bot id=7147966252
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 294
+Traceback (most recent call last):
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/translittgbot.py", line 22, in proccess_command_start
+    await bot.send_message(chat_id=user_id, text=text, parse_mode='Markdown')
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 2962, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 494, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 294
+2024-12-16 21:22:55,068 - INFO - Мария Румянцева: 262186581 отправил текст: мария
+2024-12-16 21:22:55,151 - INFO - Update id=208363997 is handled. Duration 82 ms by bot id=7147966252
+2024-12-16 21:22:57,973 - INFO - Мария Румянцева: 262186581 запустил бота
+2024-12-16 21:22:58,033 - INFO - Update id=208363998 is not handled. Duration 60 ms by bot id=7147966252
+2024-12-16 21:22:58,034 - ERROR - Cause exception while process update id=208363998 by bot id=7147966252
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 294
+Traceback (most recent call last):
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/translittgbot.py", line 22, in proccess_command_start
+    await bot.send_message(chat_id=user_id, text=text, parse_mode='Markdown')
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 2962, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 494, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 294
+2024-12-16 21:23:24,183 - WARNING - Received SIGINT signal
+2024-12-16 21:23:24,184 - INFO - Polling stopped for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:23:24,184 - INFO - Polling stopped
+2024-12-16 21:23:27,518 - INFO - Start polling
+2024-12-16 21:23:27,687 - INFO - Run polling for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:23:28,534 - INFO - Мария Румянцева: 262186581 запустил бота
+2024-12-16 21:23:28,758 - INFO - Update id=208363999 is handled. Duration 224 ms by bot id=7147966252
+2024-12-16 21:23:47,055 - WARNING - Received SIGINT signal
+2024-12-16 21:23:47,056 - INFO - Polling stopped for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:23:47,056 - INFO - Polling stopped
+2024-12-16 21:23:50,313 - INFO - Start polling
+2024-12-16 21:23:50,473 - INFO - Run polling for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:23:52,356 - INFO - Мария Румянцева: 262186581 запустил бота
+2024-12-16 21:23:52,528 - INFO - Update id=208364000 is not handled. Duration 171 ms by bot id=7147966252
+2024-12-16 21:23:52,528 - ERROR - Cause exception while process update id=208364000 by bot id=7147966252
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 294
+Traceback (most recent call last):
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/translittgbot.py", line 22, in proccess_command_start
+    await bot.send_message(chat_id=user_id, text=text, parse_mode='markdown')
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 2962, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 494, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 294
+2024-12-16 21:24:51,177 - WARNING - Received SIGINT signal
+2024-12-16 21:24:51,177 - INFO - Polling stopped for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:24:51,178 - INFO - Polling stopped
+2024-12-16 21:24:54,515 - INFO - Start polling
+2024-12-16 21:24:54,682 - INFO - Run polling for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:25:00,320 - INFO - Мария Румянцева: 262186581 запустил бота
+2024-12-16 21:25:00,524 - INFO - Update id=208364001 is not handled. Duration 204 ms by bot id=7147966252
+2024-12-16 21:25:00,525 - ERROR - Cause exception while process update id=208364001 by bot id=7147966252
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 294
+Traceback (most recent call last):
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/translittgbot.py", line 21, in proccess_command_start
+    await bot.send_message(chat_id=user_id, text=text, parse_mode='markdown')
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 2962, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 494, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Mashulik/Эльбрус ДС/my-tg-bot-transliteration/venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 294
+2024-12-16 21:26:34,656 - WARNING - Received SIGINT signal
+2024-12-16 21:26:34,657 - INFO - Polling stopped for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:26:34,657 - INFO - Polling stopped
+2024-12-16 21:26:38,018 - INFO - Start polling
+2024-12-16 21:26:38,183 - INFO - Run polling for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:26:41,862 - INFO - Мария Румянцева: 262186581 запустил бота
+2024-12-16 21:26:42,075 - INFO - Update id=208364002 is handled. Duration 213 ms by bot id=7147966252
+2024-12-16 21:26:52,767 - INFO - Мария Румянцева: 262186581 отправил текст: Мария Румянцева
+2024-12-16 21:26:52,845 - INFO - Update id=208364003 is handled. Duration 78 ms by bot id=7147966252
+2024-12-16 21:27:55,443 - WARNING - Received SIGINT signal
+2024-12-16 21:27:55,444 - INFO - Polling stopped for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:27:55,444 - INFO - Polling stopped
+2024-12-16 21:27:58,856 - INFO - Start polling
+2024-12-16 21:27:59,025 - INFO - Run polling for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:28:07,189 - INFO - Мария Румянцева: 262186581 запустил бота
+2024-12-16 21:28:07,413 - INFO - Update id=208364004 is handled. Duration 224 ms by bot id=7147966252
+2024-12-16 21:28:29,672 - WARNING - Received SIGINT signal
+2024-12-16 21:28:29,673 - INFO - Polling stopped for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:28:29,673 - INFO - Polling stopped
+2024-12-16 21:28:32,847 - INFO - Start polling
+2024-12-16 21:28:33,014 - INFO - Run polling for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:28:33,299 - INFO - Мария Румянцева: 262186581 запустил бота
+2024-12-16 21:28:33,501 - INFO - Update id=208364005 is handled. Duration 201 ms by bot id=7147966252
+2024-12-16 21:29:52,937 - INFO - Start polling
+2024-12-16 21:29:53,108 - INFO - Run polling for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:30:20,421 - WARNING - Received SIGINT signal
+2024-12-16 21:30:20,422 - INFO - Polling stopped for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'
+2024-12-16 21:30:20,423 - INFO - Polling stopped
+2024-12-16 21:30:23,626 - INFO - Start polling
+2024-12-16 21:30:23,797 - INFO - Run polling for bot @transliteration_rum_bot id=7147966252 - 'Transliteration bot'

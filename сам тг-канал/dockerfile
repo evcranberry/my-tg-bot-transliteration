@@ -1,0 +1,5 @@
+FROM python:3.10-slim
+ENV TOKEN='7147966252:AAHg8QtPOqWfnUqWdNvpUXkry0zSg1OnYAQ'
+COPY . .
+RUN pip install -r requirements.txt
+ENTRYPOINT [ "python", "translittgbot.py" ]
